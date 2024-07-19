@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> | Details | </title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/lg.svg" alt="Image of John Sam" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="projects.html" class="nav-link"> projects </a>
+          <a href="certs.html" class="nav-link"> certifications </a>
+          <a href="blogs.html" class="nav-link"> blogs </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="project-page">
+        <section class="project-hero">
+          <img
+            src="./assets/projects/p1.jpg"
+            class="img project-hero-img"
+          />
+          <article class="project-info">
+            <h2>The Cloud Resume Challenge on the AWS Platform</h2>
+            <p>
+              I took on the renowned Cloud Resume Challenge to test my AWS Cloud knowledge for the Cloud Practitioner exam. This project-based approach solidifies learning by mirroring real-world scenarios. Participants create a cloud-hosted resume using services like object storage, a NoSQL database, and an API gateway, while employing Infrastructure as Code tools and CI/CD pipelines. This challenge not only demonstrates technical skills but also provides experience in cloud architecture, security, and DevOps practices. Completing it results in a publicly accessible resume, showcasing cloud expertise and a commitment to continuous learning, making it a valuable professional asset.
+            </p>
+            <div class="project-icons">
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>Github link</h5>
+                <p>github.com</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>portfolio link</h5>
+                <p>john.twasam</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>challenge link</h5>
+                <p>https://cloudresumechallenge.dev/</p>
+              </article>
+            </div>
+            <p class="project-tags">
+              Technologies : <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+            </p>
+          </article>
+        </section>
+        <!-- content -->
+        <section class="project-content">
+          <article>
+            <h4>instructions</h4>
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 1: Static Website</p>
+                <div></div>
+              </header>
+              <p>
+                The resume website needs to built using HTML, CSS and Vanilla JavaScript
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 2: HTTPS and DNS</p>
+                <div></div>
+              </header>
+              <p>
+                The website should be deployed on a custom domain name with SSL in place to secure traffic to the site
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 3: Javascript and Database</p>
+                <div></div>
+              </header>
+              <p>
+                Write a JavaScript visitors counter that displays how many people have accessed the site. 
+                The counter should be stored, updated and retrieved from a Database 
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 4: Python TEST and API</p>
+                <div></div>
+              </header>
+              <p>
+               An API, and a lambda function written in python to communicate with the Website and Database and a test to run to make sure your functions are working as intended
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 5: Infrastructure as Code and Source Control</p>
+                <div></div>
+              </header>
+              <p>
+                Employ infrastructure as code to provision vaious resources needed for the resume website.
+                The Main Website code and IaC should be commited to Source Control like github this will make it easier to setup CI/CD.
+              </p>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>step 6: Setup CI/CD (Back end) and CI/CD (Front end)</p>
+                <div></div>
+              </header>
+              <p>
+               Setup Github actions for both your Frontend and Backend code so that changes are automatically deployed  
+              </p>
+            </div>
+            <div class="single-instruction">
+              <header>
+                <p>step 7:Blog post</p>
+                <div></div>
+              </header>
+              <p>
+               The final step is a blog Post about the Cloud Resume Challenge that you took and that is what you are reading (It feels like inception)
+              </p>
+            </div>
+            <!-- end of single instruction -->
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>Concepts</h4>
+              <p class="single-ingredient">IAM and Bucket Control List</p>
+              <p class="single-ingredient">DNS and Content Caching</p>
+              <p class="single-ingredient">Infrasctructre as Code</p>
+              <p class="single-ingredient">CD/CI</p>
+            </div>
+            <div>
+              <h4>Services</h4>
+              <p class="single-tool">S3 bucket</p>
+              <p class="single-tool">Amazon CloudFront</p>
+              <p class="single-tool">DynamoDB</p>
+              <p class="single-tool">Amazon Route 53</p>
+              <p class="single-tool">Terraform</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">John.Twasam</span>
+        <a href="#"></a>
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
