@@ -45,27 +45,27 @@
     <main class="page">
       <div class="project-page">
         <section class="project-hero">
-          <img src="./assets/projects/p1.jpg" class="img project-hero-img" />
+          <img src="./assets/projects/p2.png" class="img project-hero-img" />
           <article class="project-info">
-            <h2>The Cloud Resume Challenge on the AWS Platform</h2>
+            <h2>Deploying a Static Website Using S3 Bucket</h2>
             <p>
-              I took on the renowned Cloud Resume Challenge to test my AWS Cloud knowledge for the Cloud Practitioner exam. This project-based approach solidifies learning by mirroring real-world scenarios. Participants create a cloud-hosted resume using services like object storage, a NoSQL database, and an API gateway, while employing Infrastructure as Code tools and CI/CD pipelines. This challenge not only demonstrates technical skills but also provides experience in cloud architecture, security, and DevOps practices. Completing it results in a publicly accessible resume, showcasing cloud expertise and a commitment to continuous learning, making it a valuable professional asset.
+              In this project, you'll learn how to host a static website using an AWS S3 bucket. This method eliminates the need to manage a server, allowing you to focus on your website's content and design. By using Infrastructure as Code (IaC) with AWS SAM (Serverless Application Model), we will streamline the setup and deployment process, making it easier to implement a CI/CD pipeline. This approach is ideal for maintaining efficiency and adhering to industry standards.
             </p>
             <div class="project-icons">
               <article>
                 <i class="fab fa-github"></i>
-                <h5>GitHub Link</h5>
-                <p><a href="https://github.com">github.com</a></p>
+                <h5>Github link</h5>
+                <p>github.com</p>
               </article>
               <article>
                 <i class="fas fa-globe"></i>
-                <h5>Portfolio Link</h5>
-                <p><a href="https://john.twasam">john.twasam</a></p>
+                <h5>Portfolio link</h5>
+                <p>john.twasam</p>
               </article>
               <article>
                 <i class="fas fa-trophy"></i>
-                <h5>Challenge Link</h5>
-                <p><a href="https://cloudresumechallenge.dev/">cloudresumechallenge.dev</a></p>
+                <h5>Challenge link</h5>
+                <p>https://cloudresumechallenge.dev/</p>
               </article>
             </div>
             <p class="project-tags">
@@ -91,90 +91,62 @@
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 2: HTTPS and DNS</p>
+                <p>Step 2: Create Your S3 Bucket</p>
                 <div></div>
               </header>
               <p>
-                The website should be deployed on a custom domain name with SSL in place to secure traffic to the site.
+                You can create your bucket using the AWS console, the CLI, or by provisioning it through code. In my case, I used the AWS Serverless Application Model (SAM).
               </p>
             </div>
             <!-- end of single instruction -->
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 3: JavaScript and Database</p>
+                <p>Configure Permissions and Enable Static Hosting</p>
                 <div></div>
               </header>
               <p>
-                Write a JavaScript visitor counter that displays how many people have accessed the site. The counter should be stored, updated, and retrieved from a database.
+                After the bucket has been created, you need to enable public access to it in the permissions tab or during creation. Create a bucket policy to enable public read access, and then enable static hosting for the bucket.
               </p>
             </div>
             <!-- end of single instruction -->
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 4: Python API and Testing</p>
+                <p>Upload Website Assets</p>
                 <div></div>
               </header>
               <p>
-                Create an API and a Lambda function written in Python to communicate with the website and database. Ensure you write tests to verify that your functions work as intended.
+                Website files can be uploaded to the bucket either through the AWS console or CLI. If you have set up a CI/CD pipeline, the content will be uploaded automatically.
               </p>
             </div>
             <!-- end of single instruction -->
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 5: Infrastructure as Code and Source Control</p>
+                <p>Step 5: Visit the URL</p>
                 <div></div>
               </header>
               <p>
-                Use Infrastructure as Code to provision the various resources needed for the resume website. The main website code and IaC should be committed to source control like GitHub to facilitate CI/CD setup.
+                Visit the URL provided when you enabled static website hosting on the bucket.
               </p>
             </div>
-            <!-- end of single instruction -->
-            <!-- single instruction -->
-            <div class="single-instruction">
-              <header>
-                <p>Step 6: CI/CD Setup (Back End) and CI/CD (Front End)</p>
-                <div></div>
-              </header>
-              <p>
-                Set up GitHub Actions for both your front-end and back-end code so that changes are automatically deployed.
-              </p>
-            </div>
-            <!-- end of single instruction -->
-            <!-- single instruction -->
-            <div class="single-instruction">
-              <header>
-                <p>Step 7: Blog Post</p>
-                <div></div>
-              </header>
-              <p>
-                The final step is a blog post about the Cloud Resume Challenge that you took, and that is what you are reading (It feels like inception).
-              </p>
-            </div>
-            <!-- end of single instruction -->
           </article>
           <article class="second-column">
             <div>
               <h4>Concepts</h4>
-              <p class="single-ingredient">IAM and Bucket Control List</p>
-              <p class="single-ingredient">DNS and Content Caching</p>
-              <p class="single-ingredient">Infrastructure as Code</p>
-              <p class="single-ingredient">CI/CD</p>
+              <p class="single-ingredient">IAM</p>
+              <p class="single-ingredient">Bucket Policy and Permissions</p>
             </div>
             <div>
               <h4>Services</h4>
               <p class="single-tool">S3 Bucket</p>
-              <p class="single-tool">Amazon CloudFront</p>
-              <p class="single-tool">DynamoDB</p>
-              <p class="single-tool">Amazon Route 53</p>
-              <p class="single-tool">AWS Serverless Application Model (SAM)</p>
+              <p class="single-tool">IAM</p>
             </div>
           </article>
         </section>
       </div>
-    </main>    
+    </main>
     <!-- footer -->
     <footer class="page-footer">
       <p>

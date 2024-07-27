@@ -45,11 +45,11 @@
     <main class="page">
       <div class="project-page">
         <section class="project-hero">
-          <img src="./assets/projects/p1.jpg" class="img project-hero-img" />
+          <img src="./assets/projects/p7.jpg" class="img project-hero-img" />
           <article class="project-info">
-            <h2>The Cloud Resume Challenge on the AWS Platform</h2>
+            <h2>Deploying a Telegram Bot Using AWS Lambda</h2>
             <p>
-              I took on the renowned Cloud Resume Challenge to test my AWS Cloud knowledge for the Cloud Practitioner exam. This project-based approach solidifies learning by mirroring real-world scenarios. Participants create a cloud-hosted resume using services like object storage, a NoSQL database, and an API gateway, while employing Infrastructure as Code tools and CI/CD pipelines. This challenge not only demonstrates technical skills but also provides experience in cloud architecture, security, and DevOps practices. Completing it results in a publicly accessible resume, showcasing cloud expertise and a commitment to continuous learning, making it a valuable professional asset.
+              This project involves deploying a Telegram bot on AWS Lambda, enabling serverless operations. AWS Lambda allows you to run code without provisioning or managing servers, making it a cost-effective and scalable solution for deploying bots. The project covers setting up the Lambda function, integrating with the Telegram API, and configuring the necessary permissions and triggers. This demonstrates skills in serverless architecture, event-driven programming, and cloud services orchestration.
             </p>
             <div class="project-icons">
               <article>
@@ -69,7 +69,7 @@
               </article>
             </div>
             <p class="project-tags">
-              Technologies: <a href="#">HTML</a> <a href="#">CSS</a> <a href="#">JavaScript</a>
+              Technologies: <a href="#">Node.js</a> <a href="#">AWS Lambda</a> <a href="#">Telegram API</a>
             </p>
           </article>
         </section>
@@ -80,96 +80,94 @@
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 1: Static Website</p>
+                <p>Step 1: Create a Telegram Bot</p>
                 <div></div>
               </header>
               <p>
-                The resume website needs to be built using HTML, CSS, and Vanilla JavaScript.
+                Use the BotFather on Telegram to create a new bot. Note down the bot token provided, as it will be used to authenticate requests.
               </p>
             </div>
             <!-- end of single instruction -->
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 2: HTTPS and DNS</p>
+                <p>Step 2: Set Up AWS Lambda Function</p>
                 <div></div>
               </header>
               <p>
-                The website should be deployed on a custom domain name with SSL in place to secure traffic to the site.
+                In the AWS Management Console, create a new Lambda function. Choose Node.js as the runtime and set up the execution role with the necessary permissions. Alternatively, you can use Infrastructure as Code (IaC). I used the AWS Serverless Application Model (SAM) to provision the necessary infrastructure.
               </p>
             </div>
             <!-- end of single instruction -->
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 3: JavaScript and Database</p>
+                <p>Step 3: Write Lambda Function Code</p>
                 <div></div>
               </header>
               <p>
-                Write a JavaScript visitor counter that displays how many people have accessed the site. The counter should be stored, updated, and retrieved from a database.
+                Write the code for the Lambda function to handle messages from Telegram. Use the Telegram bot token for authentication and integrate with the Telegram API.
               </p>
             </div>
             <!-- end of single instruction -->
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 4: Python API and Testing</p>
+                <p>Step 4: Configure API Gateway</p>
                 <div></div>
               </header>
               <p>
-                Create an API and a Lambda function written in Python to communicate with the website and database. Ensure you write tests to verify that your functions work as intended.
+                Set up an API Gateway to trigger the Lambda function based on HTTP requests from Telegram. Configure the endpoint to be invoked by the Telegram bot.
               </p>
             </div>
             <!-- end of single instruction -->
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 5: Infrastructure as Code and Source Control</p>
+                <p>Step 5: Deploy the Lambda Function</p>
                 <div></div>
               </header>
               <p>
-                Use Infrastructure as Code to provision the various resources needed for the resume website. The main website code and IaC should be committed to source control like GitHub to facilitate CI/CD setup.
+                Deploy the Lambda function and API Gateway. Note down the API endpoint URL.
               </p>
             </div>
             <!-- end of single instruction -->
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 6: CI/CD Setup (Back End) and CI/CD (Front End)</p>
+                <p>Step 6: Set Webhook in Telegram</p>
                 <div></div>
               </header>
               <p>
-                Set up GitHub Actions for both your front-end and back-end code so that changes are automatically deployed.
+                Set up the webhook in Telegram to forward updates to the API Gateway endpoint URL using the Telegram Bot API.
               </p>
             </div>
             <!-- end of single instruction -->
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 7: Blog Post</p>
+                <p>Step 7: Test the Telegram Bot</p>
                 <div></div>
               </header>
               <p>
-                The final step is a blog post about the Cloud Resume Challenge that you took, and that is what you are reading (It feels like inception).
+                Test the Telegram bot by sending messages and verifying the responses. Debug and troubleshoot as needed.
               </p>
             </div>
-            <!-- end of single instruction -->
           </article>
           <article class="second-column">
             <div>
               <h4>Concepts</h4>
-              <p class="single-ingredient">IAM and Bucket Control List</p>
-              <p class="single-ingredient">DNS and Content Caching</p>
-              <p class="single-ingredient">Infrastructure as Code</p>
-              <p class="single-ingredient">CI/CD</p>
+              <p class="single-ingredient">Serverless Architecture</p>
+              <p class="single-ingredient">API Gateway</p>
+              <p class="single-ingredient">Event-Driven Programming</p>
+              <p class="single-ingredient">Webhook Configuration</p>
             </div>
             <div>
               <h4>Services</h4>
-              <p class="single-tool">S3 Bucket</p>
-              <p class="single-tool">Amazon CloudFront</p>
-              <p class="single-tool">DynamoDB</p>
-              <p class="single-tool">Amazon Route 53</p>
-              <p class="single-tool">AWS Serverless Application Model (SAM)</p>
+              <p class="single-tool">AWS Lambda</p>
+              <p class="single-tool">API Gateway</p>
+              <p class="single-tool">IAM</p>
+              <p class="single-tool">Telegram API</p>
             </div>
           </article>
         </section>

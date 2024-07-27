@@ -45,11 +45,11 @@
     <main class="page">
       <div class="project-page">
         <section class="project-hero">
-          <img src="./assets/projects/p1.jpg" class="img project-hero-img" />
+          <img src="./assets/projects/p3.jpg" class="img project-hero-img" />
           <article class="project-info">
-            <h2>The Cloud Resume Challenge on the AWS Platform</h2>
+            <h2>Deploying a Static Website on an EC2 Instance</h2>
             <p>
-              I took on the renowned Cloud Resume Challenge to test my AWS Cloud knowledge for the Cloud Practitioner exam. This project-based approach solidifies learning by mirroring real-world scenarios. Participants create a cloud-hosted resume using services like object storage, a NoSQL database, and an API gateway, while employing Infrastructure as Code tools and CI/CD pipelines. This challenge not only demonstrates technical skills but also provides experience in cloud architecture, security, and DevOps practices. Completing it results in a publicly accessible resume, showcasing cloud expertise and a commitment to continuous learning, making it a valuable professional asset.
+              In this project, I deployed a static website on an AWS EC2 instance. This approach involves setting up and managing a virtual server, giving you more control over the environment compared to using S3. By configuring an EC2 instance to serve static content, you'll gain experience in server management, security configurations, and automation through Infrastructure as Code (IaC) tools. This project demonstrates proficiency in cloud infrastructure, operating system management, and DevOps practices, resulting in a robust, scalable, and secure web hosting solution.
             </p>
             <div class="project-icons">
               <article>
@@ -69,7 +69,7 @@
               </article>
             </div>
             <p class="project-tags">
-              Technologies: <a href="#">HTML</a> <a href="#">CSS</a> <a href="#">JavaScript</a>
+              Technologies: <a href="#">HTML</a> <a href="#">CSS</a> <a href="#">JavaScript</a> <a href="#">AWS EC2</a>
             </p>
           </article>
         </section>
@@ -80,96 +80,95 @@
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 1: Static Website</p>
+                <p>Step 1: Launch EC2 Instance</p>
                 <div></div>
               </header>
               <p>
-                The resume website needs to be built using HTML, CSS, and Vanilla JavaScript.
+                Launch an EC2 instance using the AWS Management Console. Choose an appropriate AMI (e.g., Amazon Linux 2) and instance type (e.g., t2.micro for free tier eligibility).
               </p>
             </div>
             <!-- end of single instruction -->
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 2: HTTPS and DNS</p>
+                <p>Step 2: Configure Security Groups</p>
                 <div></div>
               </header>
               <p>
-                The website should be deployed on a custom domain name with SSL in place to secure traffic to the site.
+                Configure the security group to allow inbound traffic on HTTP (port 80) and SSH (port 22) to access your website and manage the instance.
               </p>
             </div>
             <!-- end of single instruction -->
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 3: JavaScript and Database</p>
+                <p>Step 3: Connect to Your Instance</p>
                 <div></div>
               </header>
               <p>
-                Write a JavaScript visitor counter that displays how many people have accessed the site. The counter should be stored, updated, and retrieved from a database.
+                Use SSH to connect to your EC2 instance. On Linux Mac and windows ships with an SSH client, you can use the terminal.
               </p>
             </div>
             <!-- end of single instruction -->
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 4: Python API and Testing</p>
+                <p>Step 4: Install Web Server</p>
                 <div></div>
               </header>
               <p>
-                Create an API and a Lambda function written in Python to communicate with the website and database. Ensure you write tests to verify that your functions work as intended.
+                Install a web server such as Apache or Nginx. For example, to install Apache, you can use the following command: <code>sudo yum install httpd -y</code>.
               </p>
             </div>
             <!-- end of single instruction -->
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 5: Infrastructure as Code and Source Control</p>
+                <p>Step 5: Deploy Website Files</p>
                 <div></div>
               </header>
               <p>
-                Use Infrastructure as Code to provision the various resources needed for the resume website. The main website code and IaC should be committed to source control like GitHub to facilitate CI/CD setup.
+                Upload your static website files to the web server's root directory (e.g., <code>/var/www/html</code> for Apache). You can use SCP or SFTP for file transfer.
               </p>
             </div>
             <!-- end of single instruction -->
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 6: CI/CD Setup (Back End) and CI/CD (Front End)</p>
+                <p>Step 6: Start the Web Server</p>
                 <div></div>
               </header>
               <p>
-                Set up GitHub Actions for both your front-end and back-end code so that changes are automatically deployed.
+                Start the web server using a command like <code>sudo systemctl start httpd</code>. Ensure the web server starts on boot by enabling it: <code>sudo systemctl enable httpd</code>.
               </p>
             </div>
             <!-- end of single instruction -->
             <!-- single instruction -->
             <div class="single-instruction">
               <header>
-                <p>Step 7: Blog Post</p>
+                <p>Step 7: Access Your Website</p>
                 <div></div>
               </header>
               <p>
-                The final step is a blog post about the Cloud Resume Challenge that you took, and that is what you are reading (It feels like inception).
+                Open a web browser and navigate to your EC2 instance's public IP address to view your deployed website.
               </p>
             </div>
-            <!-- end of single instruction -->
           </article>
           <article class="second-column">
             <div>
               <h4>Concepts</h4>
-              <p class="single-ingredient">IAM and Bucket Control List</p>
-              <p class="single-ingredient">DNS and Content Caching</p>
-              <p class="single-ingredient">Infrastructure as Code</p>
-              <p class="single-ingredient">CI/CD</p>
+              <p class="single-ingredient">IAM Roles and Policies</p>
+              <p class="single-ingredient">Security Groups</p>
+              <p class="single-ingredient">SSH and Secure Connections</p>
+              <p class="single-ingredient">Web Server Configuration</p>
+              <p class="single-ingredient">Infrastructure as Code (IaC)</p>
             </div>
             <div>
               <h4>Services</h4>
-              <p class="single-tool">S3 Bucket</p>
-              <p class="single-tool">Amazon CloudFront</p>
-              <p class="single-tool">DynamoDB</p>
-              <p class="single-tool">Amazon Route 53</p>
-              <p class="single-tool">AWS Serverless Application Model (SAM)</p>
+              <p class="single-tool">EC2</p>
+              <p class="single-tool">Amazon Linux 2</p>
+              <p class="single-tool">Apache/Nginx</p>
+              <p class="single-tool">IAM</p>
             </div>
           </article>
         </section>
