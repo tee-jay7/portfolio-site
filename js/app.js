@@ -9,7 +9,7 @@ const getElement = (selector) => {
 
 const getViewsfromDb = async () => {
   try {
-    const results = await fetch('https://1ockk7b00c.execute-api.eu-west-1.amazonaws.com/Prod/visits');
+    const results = await fetch('https://zn2vm49ea6.execute-api.eu-west-1.amazonaws.com/Prod/visits');
     
     if (!results.ok) {
       throw new Error(`HTTP error! status: ${results.status}`);
