@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> | Details | </title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/lg.svg" alt="Image of John Sam" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="projects.html" class="nav-link"> projects </a>
+          <a href="certs.html" class="nav-link"> certifications </a>
+          <a href="blogs.html" class="nav-link"> blogs </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="project-page">
+        <section class="project-hero">
+          <img src="./assets/projects/p7.jpg" class="img project-hero-img" />
+          <article class="project-info">
+            <h2>Deploying a Telegram Bot Using Google Cloud Functions</h2>
+            <p>
+                This project involves deploying a Telegram bot on Google Cloud Functions, enabling serverless operations. Google Cloud Functions allows you to run code without provisioning or managing servers, making it a cost-effective and scalable solution for deploying bots. The project covers setting up the Cloud Function, integrating with the Telegram API, and configuring the necessary permissions and triggers. This demonstrates skills in serverless architecture, event-driven programming, and cloud services orchestration.
+            </p>
+            <div class="project-icons">
+                <article>
+                    <i class="fab fa-github"></i>
+                    <h5>Source Code Link</h5>
+                    <p><a href="https://github.com/tee-jay7/GCP_TelegramBot" target="_blank">Github</a></p>
+                </article>
+                <article>
+                    <i class="fab fa-telegram-plane"></i>
+                    <h5>Telegram Bot API Link</h5>
+                    <p><a href="https://core.telegram.org/bots/api#update" target="_blank">Telegram Api</a></p>
+                </article>
+            </div>
+            <p class="project-tags">
+                Technologies: <a href="#">Node.js</a> <a href="#">Google Cloud Functions</a> <a href="#">Telegram API</a>
+            </p>
+        </article>
+        </section>
+        <!-- content -->
+        <section class="project-content">
+            <article>
+                <h4>Instructions</h4>
+                <!-- single instruction -->
+                <div class="single-instruction">
+                    <header>
+                        <p>Step 1: Create a Telegram Bot</p>
+                        <div></div>
+                    </header>
+                    <p>
+                        Use the BotFather on Telegram to create a new bot. Note down the bot token provided, as it will be used to authenticate requests.
+                    </p>
+                </div>
+                <!-- end of single instruction -->
+                <!-- single instruction -->
+                <div class="single-instruction">
+                    <header>
+                        <p>Step 2: Set Up Google Cloud Function</p>
+                        <div></div>
+                    </header>
+                    <p>
+                        In the Google Cloud Console, create a new Cloud Function. Choose Node.js as the runtime and set up the service account with the necessary permissions. Alternatively, you can use Infrastructure as Code (IaC) tools like Terraform or Deployment Manager.
+                    </p>
+                </div>
+                <!-- end of single instruction -->
+                <!-- single instruction -->
+                <div class="single-instruction">
+                    <header>
+                        <p>Step 3: Write Cloud Function Code</p>
+                        <div></div>
+                    </header>
+                    <p>
+                        Write the code for the Cloud Function to handle messages from Telegram. Use the Telegram bot token for authentication and integrate with the Telegram API.
+                    </p>
+                </div>
+                <!-- end of single instruction -->
+                <!-- single instruction -->
+                <div class="single-instruction">
+                    <header>
+                        <p>Step 4: Configure HTTP Trigger</p>
+                        <div></div>
+                    </header>
+                    <p>
+                        Set up an HTTP trigger for the Cloud Function to be invoked by the Telegram bot. Configure the endpoint URL that will be used as a webhook.
+                    </p>
+                </div>
+                <!-- end of single instruction -->
+                <!-- single instruction -->
+                <div class="single-instruction">
+                    <header>
+                        <p>Step 5: Deploy the Cloud Function</p>
+                        <div></div>
+                    </header>
+                    <p>
+                        Deploy the Cloud Function and note down the trigger URL for the next steps.
+                    </p>
+                </div>
+                <!-- end of single instruction -->
+                <!-- single instruction -->
+                <div class="single-instruction">
+                    <header>
+                        <p>Step 6: Set Webhook in Telegram</p>
+                        <div></div>
+                    </header>
+                    <p>
+                        Set up the webhook in Telegram to forward updates to the Cloud Function's trigger URL using the Telegram Bot API.
+                    </p>
+                </div>
+                <!-- end of single instruction -->
+                <!-- single instruction -->
+                <div class="single-instruction">
+                    <header>
+                        <p>Step 7: Test the Telegram Bot</p>
+                        <div></div>
+                    </header>
+                    <p>
+                        Test the Telegram bot by sending messages and verifying the responses. Debug and troubleshoot as needed.
+                    </p>
+                </div>
+            </article>      
+          <article class="second-column">
+            <div>
+              <h4>Concepts</h4>
+              <p class="single-ingredient">Serverless Architecture</p>
+              <p class="single-ingredient">Event-Driven Programming</p>
+              <p class="single-ingredient">Webhook Configuration</p>
+            </div>
+            <div>
+              <h4>Services</h4>
+              <p class="single-tool">Google Cloud Functions</p>
+              <p class="single-tool">IAM</p>
+              <p class="single-tool">Telegram API</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>    
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">John.Twasam</span>
+        <a href="#"></a>
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
