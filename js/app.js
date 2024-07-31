@@ -20,7 +20,7 @@ const getViewsfromDb = async () => {
     views.textContent = `This site has been visited ${updated_value} times 🚀`;
   } catch (error) {
     console.error('Error fetching data:', error);
-    views.textContent = 'Error fetching view count 😓⛑️';
+    views.textContent = 'Error fetching view count ⛑️😓';
   }
 };
 
